@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logs Viewer"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ruta del log" />
+
+    <EditText
+        android:id="@+id/editLogPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="/data/local/nhsystem/output.log"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnLoadLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load Log" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/txtLogContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aquí se mostrará el contenido del log..."
+            android:textSize="14sp"
+            android:textIsSelectable="true"
+            android:padding="8dp" />
+    </ScrollView>
+
+</LinearLayout>

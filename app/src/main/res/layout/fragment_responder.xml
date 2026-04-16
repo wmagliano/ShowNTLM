@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Responder Script Runner"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interfaz" />
+
+        <EditText
+            android:id="@+id/editInterface"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ej: wlan0"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnRunResponder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Run Script" />
+
+        <TextView
+            android:id="@+id/txtResponderOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Aquí se mostrará la salida del script..."
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
+
