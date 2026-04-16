@@ -2,6 +2,8 @@
 
 Android application to execute local scripts within a NetHunter/Kali environment and visualize output and logs.
 
+A local network attack chain combining ARP poisoning (MITM) with network authentication interception, resulting in the capture of NetNTLM challenge-response hashes over protocols such as SMB, LLMNR, and NBNS.
+
 ## Features
 
 * Script execution with parameters (root required)
